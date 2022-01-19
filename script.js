@@ -226,3 +226,17 @@
 // console.log('Hey there!'
 // 7 * 3 + (4 / 2) - (8 + (2 - 1))
 // alert(7 * 3 + (4 / 2) - (8 + (2 - 1)));
+// let user ={
+//    name:'Jhon',
+//    surname: "Smith", 
+// };
+// user.name='Pete';
+// delete user.name;
+
+let obj = {};
+function isEmpty(obj){
+    for (let key in obj) {
+        return false;
+    }
+    return true;
+}
