@@ -250,15 +250,40 @@
 //     sum += salaries[key];
 // }
 // alert (sum);
-let menu ={
-    widht:200,
-    height:300,
-    title:"My menu"
-};
-let multiplyNumeric=(menu)=>{
- for(let key in menu){
-   if (typeof menu[key] == 'number'){
-       menu[key]*=2;
-   }  
- }
-}
+// let menu ={
+//     widht:200,
+//     height:300,
+//     title:"My menu"
+// };
+// let multiplyNumeric=(menu)=>{
+//  for(let key in menu){
+//    if (typeof menu[key] == 'number'){
+//        menu[key]*=2;
+//    }  
+//  }
+// }
+// let user={
+//   name:"Джон",
+//   age: 30
+// };
+// user.sayHi=function(){
+//   alert('Привет');
+// };
+// user.sayHi();
+// let styles =['Джаз','Блюз'];
+// styles.push('Рок-н-ролл');
+// styles[1]='Классика';
+// alert( styles.shift() );
+// styles.unshift('Регги');
+// styles.unshift('Рэп');
+// alert(styles);
+// function sumInput() {
+// const arr =[1,2,3,4,{}]
+// arr.forEach((value,index,arr) =>{
+//   console.log(value,index,arr)
+// })// пройтись по массиву
+const arr =[1,2,3,4,{}]
+const arr2=arr.map((value,index,arr) =>{
+  return value +index
+})
+console.log(arr2)
