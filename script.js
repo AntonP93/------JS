@@ -700,18 +700,57 @@
 
 // }
 // console.log(myLanguages({"Hindi": 60, "Dutch" : 93, "Greek": 71} ))
-function nicknameGenerator(name){
+// function nicknameGenerator(name){
 
-if(name.length <=3){
-return "Error: Name too short"
-} else{
-let promt = name.split('')
-if(promt[2] !=='a' && promt[2]!=='e' && promt[2]!=='i' && promt[2]!=='o' && promt[2]!=='u'){
-   promt.length=3
-} else{
-   promt.length=4
-   }
-  return promt.join('') 
-  }
-} 
-console.log(nicknameGenerator('Jean'))
+// if(name.length <=3){
+// return "Error: Name too short"
+// } else{
+// let promt = name.split('')
+// if(promt[2] !=='a' && promt[2]!=='e' && promt[2]!=='i' && promt[2]!=='o' && promt[2]!=='u'){
+//    promt.length=3
+// } else{
+//    promt.length=4
+//    }
+//   return promt.join('') 
+//   }
+// } 
+// console.log(nicknameGenerator('Jean'))
+// function toReadable (number) {
+//    if(number == 0){
+//        return 'zero'
+//    }
+// //   let num1
+// //   let num2
+// //   let num3
+ 
+// }
+// console.log(toReadable(0))
+// let matrix =[
+//    [ 3, 2, 1 ],
+//    [ 4, 5, 6 ],
+//    [ 9, 8, 7 ],
+//   ]
+// function towelSort (matrix) {
+//    let arr = [];
+
+//    if(matrix == null) return [];
+
+//    matrix.forEach((item, index) => {
+//        if(index % 2 != 0) {
+//            item.reverse()
+//        }
+//        item.forEach(n => arr.push(n))
+//    })
+//  return arr;
+// }
+// console.log(towelSort(matrix))
+function getMiddle(s){
+    let temp = s.length/2
+    if(s.length%2==0){
+    return s[temp-1] + s[temp]
+    } else {
+        let numb = Math.ceil(temp)
+        return s[numb-1]
+    }
+}
+console.log(getMiddle("A"))
